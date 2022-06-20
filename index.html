@@ -6,44 +6,46 @@
 		<link rel = stylesheet href = "./css/style.css">
 	</HEAD>
 	<BODY>
-		<div class = "columna centradosV fullH separarM espaciadoG">
+		<div class = "columna centradosV separarM espaciadoG">
 			<div class = ttl>Fizz Buzz</div>
 			<div class = "txt espaciado">
 				Consiste en que el se contarán números de inicio a fin,
 				y en caso de que se encuentre el que sea divisible entre Fizz o Buzz,
 				no se mostrará.
 				</div>
-			<div class = "columna centrados separar">
-				<div class = "fila centradosV separarM">
-					<div class = "centradosH">
-						<label for = uno>Fizz</label>
-						<input id = uno class = calcN type = number min = -999 max = 999 
-							placeholder = "#" oninput = "limite(this)" />
-					</div>
-					<div class = "centradosH">
-						<label for = dos>Buzz</label>
-						<input id = dos class = calcN type = number min = -999 max = 999 
-							placeholder = "#" oninput = "limite(this)" />
-					</div>
-				</div>
+			<div class = "columna centrados separarM">
 				<div class = "fila centradosV separarM">
 					<div class = "centradosH">
 						<label for = ini>Inicio</label>
 						<input id = ini class = calcN type = number min = -999 max = 999 
-							placeholder = "#" oninput = "limite(this)" />
+							placeholder = "0" oninput = "limite(this)" />
 					</div>
 					<div class = "centradosH">
 						<label for = fin>Fin</label>
 						<input id = fin class = calcN type = number min = -999 max = 999 
-							placeholder = "#" oninput = "limite(this)" />
+							placeholder = "0" oninput = "limite(this)" />
+					</div>
+				</div>
+				<div class = "fila centradosV separarM">
+					<div class = "centradosH">
+						<label for = uno>Fizz</label>
+						<input id = uno class = calcN type = number min = -999 max = 999 
+							placeholder = "0" oninput = "limite(this)" />
+					</div>
+					<div class = "centradosH">
+						<label for = dos>Buzz</label>
+						<input id = dos class = calcN type = number min = -999 max = 999 
+							placeholder = "0" oninput = "limite(this)" />
 					</div>
 				</div>
 			</div>
-			
-			<div class = "fila centrados">
-				<div class = "advert pop" >Sólo ingrese números</div>
+			<div class = "columna centrados">
+				<div class = "advert pop espaciadoEx" >Sólo ingrese números</div>
+				<div class = "fila separar">
+					<button>Al azar</button><button>Jugar</button>
+				</div>
 			</div>
-			<div class = desc>Aquí se mostrarán los números</div>
+			<div id = res class = "desc espaciado">Aquí se mostrarán los números</div>
 		</div>
 		<script src = "https://gxfs11.github.io/jsCalcu/javascript.js"></script>
 	</BODY>
