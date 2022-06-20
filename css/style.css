@@ -1,0 +1,17 @@
+@import url("https://gxfs11.github.io/jsCalcu/estilo.css");
+
+label {
+	font: italic 26px var(--ttl);
+	padding-right: 10px;
+}
+.txt {
+	font: 18px var(--txt);
+	background-color: #252525;
+	border: solid 1px black; 
+	border-radius: 4px;
+}
+.fullW  { width: 99vw; }
+.centrados {
+	align-items: center;
+	justify-content: center;
+}
