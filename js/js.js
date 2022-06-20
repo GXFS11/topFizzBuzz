@@ -12,9 +12,9 @@ function mran (max = 2) {
 }
 function jugar () {
 	res.innerHTML = "";
-	let num = "", min = ini.value, max = fin.value;
-	if (fin.value < ini.value) { min = fin.value; max = ini.value; }
-	for (let i = min; i < max + 1; i ++) {
+	let num = "", min = ini.value, max = fin.value + 1;
+	if (fin.value < ini.value) { min = fin.value; max = ini.value + 1; }
+	for (let i = min; i < max; i ++) {
 		//console.log (i);
 		let tmp = i;
 		if (i % bz.value == 0)
