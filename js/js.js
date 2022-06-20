@@ -15,7 +15,7 @@ function jugar () {
 	let num = "", min = ini.value, max = fin.value;
 	if (fin.value < ini.value) { min = fin.value; max = ini.value; }
 	for (let i = min; i < max; i ++) {
-		console.log (i);
+		//console.log (i);
 		let tmp = i;
 		if (i % bz.value == 0)
 			tmp = "Buzz";
