@@ -15,3 +15,5 @@ label {
 	align-items: center;
 	justify-content: center;
 }
+.espaciadoEx { margin: 0 var(--espacio) var(--espacio); }
+.espaciadoExG { margin: 0 var(--espaciote) var(--espaciote); }
