@@ -18,35 +18,42 @@
 					<div class = "centradosH">
 						<label for = ini>Inicio</label>
 						<input id = ini class = calcN type = number min = -999 max = 999 
-							placeholder = "0" oninput = "limite(this)" />
+							placeholder = "1" oninput = "limite(this)" />
 					</div>
 					<div class = "centradosH">
 						<label for = fin>Fin</label>
 						<input id = fin class = calcN type = number min = -999 max = 999 
-							placeholder = "0" oninput = "limite(this)" />
+							placeholder = "10" oninput = "limite(this)" />
 					</div>
 				</div>
 				<div class = "fila centradosV separarM">
 					<div class = "centradosH">
 						<label for = uno>Fizz</label>
-						<input id = uno class = calcN type = number min = -999 max = 999 
-							placeholder = "0" oninput = "limite(this)" />
+						<input id = uno class = calcN type = number min = 2 max = 999 
+							placeholder = "2" oninput = "limite(this)" />
 					</div>
 					<div class = "centradosH">
 						<label for = dos>Buzz</label>
-						<input id = dos class = calcN type = number min = -999 max = 999 
-							placeholder = "0" oninput = "limite(this)" />
+						<input id = dos class = calcN type = number min = 2 max = 999 
+							placeholder = "2" oninput = "limite(this)" />
 					</div>
 				</div>
 			</div>
 			<div class = "columna centrados">
 				<div class = "advert pop espaciadoEx" >Sólo ingrese números</div>
 				<div class = "fila separar">
-					<button>Al azar</button><button>Jugar</button>
+					<button onclick = "azar()"> 
+						<img class = "espXd i" src = ./imgs/dado.svg height = "26px"/>
+						Al azar </button>
+					<button onclick = "jugar()"> 
+						Jugar
+						<img class = "espXi d" src = ./imgs/cuatro.png height = "24px"/>
+					</button>
 				</div>
 			</div>
 			<div id = res class = "desc espaciado">Aquí se mostrarán los números</div>
 		</div>
 		<script src = "https://gxfs11.github.io/jsCalcu/javascript.js"></script>
+		<script src = "./js/js.js"></script>
 	</BODY>
 </HTML>
