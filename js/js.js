@@ -34,4 +34,6 @@ function jugar () {
 		}
 		res.innerHTML += (i == max) ? tmp + "..." : tmp + ", ";
 	}
+	res.scrollIntoView();
+	animar('pulsar', res);
 }
