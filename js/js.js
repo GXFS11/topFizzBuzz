@@ -15,10 +15,11 @@ function redo (num) {
 }
 function jugar () {
 	res.innerHTML = "";
-	ini.value = redo(ini.value);
-	fin.value = redo(fin.value);
-	fz.value = redo(fz.value);
-	bz.value = redo(bz.value);
+	/* REDONDEAMOS LOS NUMEROS PARA PRECISION */
+	ini.value = redo(+ini.value); // < Usa el operador para que lo convierta a num
+	fin.value = redo(+fin.value);
+	fz.value = redo(+fz.value);
+	bz.value = redo(+bz.value);
 	let num = "", min = ini.value, max = fin.value;
 	if (fin.value < ini.value) { min = fin.value; max = ini.value; }
 	for (let i = min; i <= max; i ++) {
